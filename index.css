@@ -145,21 +145,22 @@ body::after {
 }
 
 .today-puzzles img {
-  width: 150px;
-  height: 150px;
+  max-width: 100%;
+  height: auto;
+  display: block;
   background-color: #ddd;
-  margin-bottom: 10px;
+  margin: 0 auto 10px auto; 
   border: solid 5px black;
 }
 
-.latest-videos img{
-  width: 250px;
-  height: 150px;
+.latest-videos img {
   background-color: #ddd;
-  margin-bottom: 10px;
+  margin: 0 auto 10px auto; 
   border: solid 2px black;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
-
 /* Sidebar Styling */
 .sidebar ol {
   padding-left: 20px;

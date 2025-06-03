@@ -61,6 +61,10 @@ body::after {
   color: #025585;
 }
 
+.navbar-left a:active{
+    transform: rotate(5deg);
+}
+
 
 .navbar-left {
   display: flex;

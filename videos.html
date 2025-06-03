@@ -96,7 +96,19 @@
         <p>This is the videos page, where you can search Simon and Mark’s videos by puzzle type, date, and length!</p>
       </div>
       <div class="keyword">
-        <h1>SEARCH BY KEYWORD</h1>
+       <h1>SEARCH BY KEYWORD</h1>
+       <input type="text" placeholder="Enter keyword..." class="search-bar">
+      </div>
+      <div>
+        <h1> Popular Tags:</h1>
+      </div>
+      <div class="tag-cards">
+         <div class="tag-card">Logic</div>
+         <div class="tag-card">Sudoku</div>
+         <div class="tag-card">Puzzle</div>
+         <div class="tag-card">Strategy</div>
+         <div class="tag-card">GAPP</div>
+         <div class="tag-card">GAS</div>
       </div>
      
     </div>   
@@ -127,22 +139,5 @@
 
 </main>
 
-<audio id="click-sound" src="sounds/click.mp3" preload="auto"></audio>
-<script>
-  const clickSound = document.getElementById("click-sound");
-
-  // Select all nav links and buttons inside the nav
-  const nav = document.querySelector("nav");
-  if (nav) {
-    nav.addEventListener("click", (e) => {
-      const target = e.target.closest("a, button");
-      if (target) {
-        // Play the click sound
-        clickSound.currentTime = 0;
-        clickSound.play().catch(() => {}); // Prevents uncaught errors on first user interaction
-      }
-    });
-  }
-</script>
 </body>
 </html>

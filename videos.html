@@ -69,14 +69,80 @@
     <p><a href="https://youtu.be/u0FhERdlWFc?si=QcWOY-MwQvvgJ5aO">
      <img src="images/pop6.jpg" width="">
     </a></p>
-
     </div>
+
+ <section class="grid">
+
+    <!-- Monthly Prompt & Leaderboard -->
+    <div class="rcolumn">
+      <h2>MONTHLY PUZZLE PROMPT</h2>
+      <h3>“A Narrow Escape”</h3>
+      <p>For this prompt, design a puzzle that involved some sort of escape or other connectivity mechanic. This could be a puzzle genre that involves drawing a path to an exit point such as Icebarn, or a shading genre on an unusually shaped grid. Or, adapt a Sudoku variant to meet the theme. If you decide to make a puzzle designed around connectivity restrictions, there is no requirement for this to be obvious from the start, provided it emerges as a key step along the solve path. </p>
+
+      <h3>DAILY LEADERBOARD</h3>
+      <ol>
+        <li>dorlir</li>
+        <li>shye</li>
+        <li>TallCat</li>
+        <li>Phistomefel</li>
+        <li>Marty Sears</li>
+      </ol>
+    </div>
+
+    <!-- Today's GAS and GAPP -->
+    <div class="today-puzzles">
+      <div class="welcome">
+        <h1>VIDEOS</h1>
+        <p>This is the videos page, where you can search Simon and Mark’s videos by puzzle type, date, and length!</p>
+      </div>
+      <div class="keyword">
+        <h1>SEARCH BY KEYWORD</h1>
+      </div>
+     
+    </div>   
+
+    <div class="latest-videos">
+      <h2>LATEST VIDEOS</h2>
+      <div class="video-item">
+        <p><a href="https://youtu.be/qDPVDV7e14g?si=RDZUepBgSAzbtatQ">
+        <img src="images/latestmark.jpg">
+        </a></p>
+        <p>A Tricky Balancing Act</p>
+      </div>
+      <div class="video-item">
+        <p><a href="https://youtu.be/DKPhTQoygdY?si=1dMR337C_fIl_Lz8">
+        <img src="images/latestsimon.jpg">
+        </a></p>
+        <p>What's Under The Sudoku Fog?!</p>
+      </div>
+    </div>
+
+  </section>
+</main>
+
+
 </div>
 
 
 
 </main>
 
+<audio id="click-sound" src="sounds/click.mp3" preload="auto"></audio>
+<script>
+  const clickSound = document.getElementById("click-sound");
 
+  // Select all nav links and buttons inside the nav
+  const nav = document.querySelector("nav");
+  if (nav) {
+    nav.addEventListener("click", (e) => {
+      const target = e.target.closest("a, button");
+      if (target) {
+        // Play the click sound
+        clickSound.currentTime = 0;
+        clickSound.play().catch(() => {}); // Prevents uncaught errors on first user interaction
+      }
+    });
+  }
+</script>
 </body>
 </html>

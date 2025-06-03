@@ -31,7 +31,7 @@ body::after {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(117, 117, 117, 0.5); /* Strong overlay */
+  background-color: rgba(117, 117, 117, 0.5); 
   z-index: -1;
 }
 
@@ -96,11 +96,146 @@ body::after {
   color: #025585;
 }
 
+.main-content {
+  padding: 20px;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: 0.75fr 1.5fr 0.75fr;
+  gap: 40px;
+}
+
+/* Middle Column */
+.latest-videos,
+.today-puzzles,
+.sidebar {
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.today-puzzles {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.today-puzzles h1{
+  font-size: 20px
+}
+
+
+.genapp{
+  display: flex;
+  gap: 20px;
+}
+
+.gas, .gapp {
+  flex: 1;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.gas p, .gapp p {
+  margin: 0.3rem 0;
+  line-height: 1.3;
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+
+.gas img,
+.gapp img {
+  width: 70%;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+.welcome{
+  text-align: center;
+}
+
+.welcome h1{
+  font-size: 40px;
+}
+
+.welcome p{
+  font-size: 20px;
+}
+
+@font-face {
+  font-family: 'Geo';
+  src: url('fonts/Geo-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+span{
+  font-family: Geo;
+  font-size: 32px;
+}
+
+/* Left Column */
+.video-item {
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+.latest-videos img {
+  background-color: #ddd;
+  margin: 0 auto 10px auto; 
+  border: solid 2px black;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.latest-videos p{
+   margin: 0.3rem 0;
+  line-height: 1.3;
+  text-align: left;
+  font-size: 1.5vw;
+}
+
+.latest-videos h2{
+  font-size: 30px;
+}
+
+/* Right Column */
+
+.rcolumn ol {
+  padding-left: 20px;
+}
+
+h1, h2, h3, p, ol {
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.7);
+}
+
+.rcolumn h2{
+  font-size: 30px;
+  text-align: center;
+}
+
+.rcolumn h3{
+  font-size: 25px;
+}
+
+.rcolumn p{
+  font-size: 15px
+}
+
+
+/* Scrolling Images */
+
 .marquee {
   overflow: hidden;
   position: relative;
   width: 100%;
-  background-color: #ddd;
   padding: 10px 0;
   text-align: center;
   font-size: 8px

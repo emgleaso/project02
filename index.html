@@ -92,8 +92,22 @@
 
   </section>
 </main>
-</body>
-</html>
+<audio id="click-sound" src="sounds/click.mp3" preload="auto"></audio>
+<script>
+  const clickSound = document.getElementById("click-sound");
 
+  // Select all nav links and buttons inside the nav
+  const nav = document.querySelector("nav");
+  if (nav) {
+    nav.addEventListener("click", (e) => {
+      const target = e.target.closest("a, button");
+      if (target) {
+        // Play the click sound
+        clickSound.currentTime = 0;
+        clickSound.play().catch(() => {}); // Prevents uncaught errors on first user interaction
+      }
+    });
+  }
+</script>
 </body>
 </html>

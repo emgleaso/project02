@@ -126,7 +126,7 @@ body::after {
   display: block;
   background-color: #ddd;
   margin: 0 auto 10px auto; 
-  border: solid 5px black;
+  border: solid 2px black;
 }
 
 .genapp{

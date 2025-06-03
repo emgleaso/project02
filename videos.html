@@ -75,18 +75,9 @@
 
     <!-- Monthly Prompt & Leaderboard -->
     <div class="rcolumn">
-      <h2>MONTHLY PUZZLE PROMPT</h2>
-      <h3>“A Narrow Escape”</h3>
-      <p>For this prompt, design a puzzle that involved some sort of escape or other connectivity mechanic. This could be a puzzle genre that involves drawing a path to an exit point such as Icebarn, or a shading genre on an unusually shaped grid. Or, adapt a Sudoku variant to meet the theme. If you decide to make a puzzle designed around connectivity restrictions, there is no requirement for this to be obvious from the start, provided it emerges as a key step along the solve path. </p>
-
-      <h3>DAILY LEADERBOARD</h3>
-      <ol>
-        <li>dorlir</li>
-        <li>shye</li>
-        <li>TallCat</li>
-        <li>Phistomefel</li>
-        <li>Marty Sears</li>
-      </ol>
+      <h2>Not sure what you're looking for?</h2>
+      <h3>No problem!</h3>
+      <button class="random-button" onclick="goToRandomVideo()">🎲 RANDOM VIDEO</button>
     </div>
 
     <!-- Today's GAS and GAPP -->
@@ -103,12 +94,12 @@
         <h1> Popular Tags:</h1>
       </div>
       <div class="tag-cards">
-         <div class="tag-card">Logic</div>
-         <div class="tag-card">Sudoku</div>
-         <div class="tag-card">Puzzle</div>
-         <div class="tag-card">Strategy</div>
-         <div class="tag-card">GAPP</div>
-         <div class="tag-card">GAS</div>
+         <div class="tag-card">Circles</div>
+         <div class="tag-card">Arrows</div>
+         <div class="tag-card">Kropki</div>
+         <div class="tag-card">Whispers</div>
+         <div class="tag-card">Killer</div>
+         <div class="tag-card">Sandwich</div>
       </div>
      
     </div>   
@@ -132,12 +123,22 @@
   </section>
 </main>
 
-
-</div>
-
-
-
-</main>
+<script>
+  function goToRandomVideo() {
+    const videos = [
+      "https://youtu.be/hAyZ9K2EBF0?si=xiXHWlUkOeJrLy1i",
+      "https://youtu.be/wO1G7GkIrWE?si=diAprysjhVc2266t",
+      "https://youtu.be/wUnnXwLTbnA?si=BPAGtyd282NH3ZV0",
+      "https://youtu.be/yKf9aUIxdb4?si=zR5Z_WR7-w5sdtQ4",
+      "https://youtu.be/La7Yg_rav24?si=NwuXP0XnGmgdYv6U",
+      "https://youtu.be/u0FhERdlWFc?si=QcWOY-MwQvvgJ5aO",
+      "https://youtu.be/qDPVDV7e14g?si=RDZUepBgSAzbtatQ",
+      "https://youtu.be/DKPhTQoygdY?si=1dMR337C_fIl_Lz8"
+    ];
+    const randomIndex = Math.floor(Math.random() * videos.length);
+    window.location.href = videos[randomIndex];
+  }
+</script>
 
 </body>
 </html>

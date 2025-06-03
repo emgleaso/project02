@@ -140,5 +140,30 @@
   }
 </script>
 
+<script>
+  const gasgappLinks = [
+    "https://www.puzzle-heyawake.com/",
+    "https://www.puzzle-norinori.com/",
+    "https://www.puzzle-lits.com/",
+    "https://www.puzzle-galaxies.com/",
+    "https://www.puzzle-tents.com/",
+    "https://www.puzzle-battleships.com/",
+    "https://www.puzzle-masyu.com/",
+    "https://www.puzzle-aquarium.com/",
+    "https://www.puzzle-star-battle.com/",
+    "https://www.puzzle-jigsaw-sudoku.com/",
+    "https://www.puzzle-killer-sudoku.com/",
+    "https://www.puzzle-sudoku.com/",
+    "https://www.puzzle-nurikabe.com/"
+  ];
+
+  document.getElementById("genapp-link").addEventListener("click", function (e) {
+    e.preventDefault();
+    const randomIndex = Math.floor(Math.random() * gasgappLinks.length);
+    const randomLink = gasgappLinks[randomIndex];
+    window.location.href = randomLink;
+  });
+</script>
+
 </body>
 </html>

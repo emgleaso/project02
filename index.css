@@ -166,6 +166,10 @@ body::after {
   font-size: 40px;
 }
 
+.welcome p{
+  font-size: 20px;
+}
+
 @font-face {
   font-family: 'Geo';
   src: url('fonts/Geo-Regular.ttf') format('truetype');
@@ -200,6 +204,10 @@ span{
   font-size: 1.5vw;
 }
 
+.latest-videos h2{
+  font-size: 30px;
+}
+
 /* Right Column */
 
 .rcolumn ol {
@@ -209,4 +217,17 @@ span{
 h1, h2, h3, p, ol {
   color: rgb(0, 0, 0);
   text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.7);
+}
+
+.rcolumn h2{
+  font-size: 30px;
+  text-align: center;
+}
+
+.rcolumn h3{
+  font-size: 25px;
+}
+
+.rcolumn p{
+  font-size: 15px
 }

@@ -95,3 +95,34 @@ body::after {
 .sub-navbar a:hover {
   color: #025585;
 }
+
+.marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-color: #ddd;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 8px
+}
+
+.marquee-content {
+  display: flex;
+  gap: 40px;
+  animation: scroll-loop 20s linear infinite;
+}
+
+.marquee-content img {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+}
+
+@keyframes scroll-loop {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
